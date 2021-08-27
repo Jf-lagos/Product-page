@@ -1,6 +1,5 @@
 let container = document.getElementById('image-container');
 function change_img(image) {
-    container= image;
+    container.src= image.src;
 }
 
-console.log('hello')
