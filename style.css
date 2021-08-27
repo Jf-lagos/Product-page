@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #6ab04c;
+    background: whitesmoke;
 }
 
 .card {
@@ -16,19 +16,50 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid rgb(0, 90, 35);
 }
 
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  border-radius: 16px;
+  z-index: -1;
+}
+.card::before {
+  width: 90%;
+  height: 120%;
+  background-color: #4A4AE4aa;
+  top: -10%;
+  left: 20%;
+}
+.card::after {
+  background: linear-gradient(90deg, #F073C8aa 0%, #FF6A95aa 99%);
+  width: 8rem;
+  height: 8rem;
+  left: -5%;
+  bottom: -5%;
+  z-index: -2;
+}
 .top-section {
     height: 310px;
     overflow: hidden;
     background: #fff;
     position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
 
 #image-container {
     width: 360px;
     height: 240px;
 }
+
 
 .nav {
     text-align: center;
@@ -50,12 +81,15 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #6ab04c;
+    color: rgb(0, 90, 35);
     font-size: 24px;
 }
 
 .product-info {
     padding: 24px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .name {
@@ -71,7 +105,7 @@ body {
 
 .btn {
     display: block;
-    background: #6ab046;
+    background: rgb(0, 90, 35);
     text-align: center;
     color: #fff;
     padding: 10px;
