@@ -94,13 +94,12 @@ body {
     text-align: center;
     font-size: 30px;
     color: #333;
-    text-decoration: underline;
 }
 
 .price {
     font-size: 14px;
     font-weight: bolder;
-    color: black;
+    color: rgb(0, 70, 15);
     font-family: 'Montserrat', sans-serif, bolder;
     position: relative;
     padding-left: 52px;
