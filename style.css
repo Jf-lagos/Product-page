@@ -50,7 +50,7 @@ body {
     box-shadow: 10px 10px 20px #333;
 }
 .top-section {
-    height: 310px;
+    height: 340px;
     overflow: hidden;
     background: #fff;
     position: relative;
@@ -65,28 +65,29 @@ body {
     width: auto;
     height: auto;  
     margin-left: 60px;
+    padding-top: 10px;
 }
-
-
 
 .nav {
     text-align: center;
 }
 
 .nav img {
-    width: 80px;
-    height: 50px;
+    max-width: 70px;
+    max-height: 70px;
     border: 1px solid #ddd;
     margin: 8px 2px;
     cursor: pointer;
     transition: 0.3s;
+    width: auto;
+    height: auto;
 }
 .nav img:hover {
     border-color: rgb(0, 90, 35);  
 }
 
 .product-info {
-    padding: 10px 24px 24px 24px;
+    padding: 6px 24px 24px 24px;
     background-color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
